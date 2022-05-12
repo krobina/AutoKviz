@@ -1,0 +1,6 @@
+		QUIZI
+světle modrá = #b4dbdc
+tmavě modrá = #087e8b
+oranžová = #feb06a
+krémová = #fffbf0
+
