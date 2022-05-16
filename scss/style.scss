@@ -87,3 +87,124 @@ body {
         max-width: 100%;
     }
 }
+
+.content {
+    display: flex;   
+    padding: 15px 50px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+
+    &__text--primary {
+        flex: 1 0 100%;
+    }
+
+    &__image {
+        display: none;
+    }
+
+    @media (min-width: 1500px) {
+        padding: 10px 200px;
+    }
+    
+}
+
+.headline {
+    font-weight: 200;
+    margin: 0 0 40px 0;
+
+    &--big {
+        font-size: 56px;
+
+        @media (min-width: 1500px) {
+            font-size: 72px;
+        }
+
+        &::after{
+            content: "";
+            display: block;
+            background-color: #feb06a;
+            height: 2px;
+            width: 100%;
+            justify-content: center;
+            margin-top: 30px;
+        }
+    }
+
+    &--small {
+        font-weight: 300;
+        font-size: 28px;
+
+        @media (min-width: 1500px) {
+            font-size: 28px;
+        }
+    }
+}
+
+.image__logo {
+    width: 100%;
+}
+
+// .links {
+//     display: flex;
+
+//     &__text {
+//         color: #feb06a;
+//         padding: 0 20px;
+//         font-weight: 400;
+//         font-size: 30px;
+//     }
+
+//     &__item {
+//         margin: 10px;
+//         background-color: white;
+//         box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+//         border: 0px solid rgba(255, 255, 255, 0.3);
+//         border-radius: 60px;
+//         width: 60px;
+//         height: 60px;  
+//         transition-duration: 500ms;
+//         transition-property: width;
+//         display: flex;
+//         justify-content: left;
+//         align-items: center;
+//         overflow: hidden;
+
+//         &:hover {
+//             width: 300px;
+//         }
+//     }
+// }
+
+.links {
+    display: block;
+
+    &__text {
+        color: #feb06a;
+        padding: 0 20px;
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    &__item {
+        margin: 20px auto;
+        background-color: white;
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+        border: 0px solid rgba(255, 255, 255, 0.3);
+        border-radius: 60px;
+        width: 75%;
+        height: 60px;  
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}
+
+.icon {
+    width: 50px;
+    margin: 0 0 0 5px;
+}
