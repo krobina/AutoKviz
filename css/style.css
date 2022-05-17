@@ -16,16 +16,13 @@ body {
 .dropbtn {
   font-family: "Montserrat", sans-serif;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 30px;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   background-color: #ffffff;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
   border: 0px solid rgba(255, 255, 255, 0.3);
   color: #087e8b;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   transition-duration: 300ms;
   transition-property: background-color;
   width: 100%;
@@ -48,13 +45,14 @@ body {
   display: none;
   position: absolute;
   border-radius: 0px 10px 10px 10px;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
   border: 0px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
   z-index: 1;
+  min-width: 200px;
 }
 .dropdown__content li {
   list-style: none;
@@ -86,8 +84,7 @@ body {
 
 .content {
   display: flex;
-  padding: 30px 40px;
-  margin-bottom: 20px;
+  padding: 30px 40px 0 40px;
   align-items: center;
   justify-content: space-around;
 }
@@ -145,7 +142,7 @@ body {
   height: 2px;
   width: 100%;
   justify-content: center;
-  margin-top: 5px;
+  margin: 5px 0;
 }
 
 .image__logo {
@@ -184,9 +181,9 @@ body {
 
 .o_autokvizu {
   margin: 5px;
-  padding: 30px 40px;
-  margin-bottom: 20px;
+  padding: 30px 40px 0 40px;
   font-size: 16px;
+  text-align: center;
 }
 .o_autokvizu .list {
   list-style: none;
@@ -195,4 +192,19 @@ body {
 }
 .o_autokvizu .list__item {
   padding: 10px 0;
+}
+.o_autokvizu .image__logo {
+  width: 80%;
+  display: block;
+  margin: 40px auto;
+}
+
+footer {
+  background-color: #087e8b;
+  margin: 0;
+  text-align: center;
+  padding: 5px;
+}
+footer__text {
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
