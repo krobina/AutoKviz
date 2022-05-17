@@ -14,21 +14,18 @@ body {
 }
 
 .dropbtn {
-    font-family: 'Montserrat', sans-serif;
-    padding: 15px;
-    border-radius: 30px;
-    backdrop-filter: blur(20px);
-    background-color: #ffffff;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
-    border: 0px solid rgba(255, 255, 255, 0.3);
-    color: #087e8b;
+    border: none;
+    background-color: rgba($color: #ffffff, $alpha: 0.0);
+    background-image: url(/images/dropdown1.png);
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
     transition-duration: 300ms;
-    transition-property: background-color;
-    width: 100%;
+    transition-property: background-image;
+
 
     &:hover {
-        box-shadow: none;
-        border-radius: 10px 10px 10px 0px;
+        background-image: url(/images/dropdown2.png);
     }
 
     &:active {
