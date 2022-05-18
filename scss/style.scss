@@ -1,3 +1,14 @@
+
+$min_tablet--small: 480px;
+$min_tablet--big: 767px;
+$min_desktop--small: 1024px;
+$min_desktop--big: 1280px;
+
+$padding--content: 30px 40px 0 40px;
+
+
+//-----------template--------------
+
 body {
     box-sizing: border-box;
     background-image: linear-gradient(to left top, #b4dbdc, #91c3c6, #6dacb2, #46959e, #087e8b);
@@ -87,9 +98,23 @@ body {
     }
 }
 
+
+footer {
+    background-color: #087e8b;
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+
+    &__text {
+        font-size: 16px;
+    }
+}
+
+
+//--------------o_autokvizu-----------
 .content {
     display: flex;   
-    padding: 30px 40px 0 40px;
+    padding: $padding--content;
     align-items: center;
     justify-content: space-around;
 
@@ -247,14 +272,25 @@ body {
     }
 }
 
-footer {
-    background-color: #087e8b;
-    margin: 0;
-    text-align: center;
-    padding: 5px;
+//----------jak_soutezit-----------
 
-    &__text {
-        font-size: 16px;
+.js-content {
+    padding: $padding--content;
+}
+
+.steps {
+
+    .step {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+
     }
+}
+
+.image__points {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
 }
 

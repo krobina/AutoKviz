@@ -77,6 +77,16 @@ body {
   max-width: 100%;
 }
 
+footer {
+  background-color: #087e8b;
+  margin: 0;
+  text-align: center;
+  padding: 5px;
+}
+footer__text {
+  font-size: 16px;
+}
+
 .content {
   display: flex;
   padding: 30px 40px 0 40px;
@@ -194,12 +204,18 @@ body {
   margin: 40px auto;
 }
 
-footer {
-  background-color: #087e8b;
-  margin: 0;
-  text-align: center;
-  padding: 5px;
+.js-content {
+  padding: 30px 40px 0 40px;
 }
-footer__text {
-  font-size: 16px;
+
+.steps .step {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+.image__points {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
