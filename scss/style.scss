@@ -102,6 +102,7 @@ body {
 footer {
     background-color: #087e8b;
     margin: 0;
+    margin-top: 20px;
     text-align: center;
     padding: 5px;
 
@@ -272,6 +273,17 @@ footer {
     }
 }
 
+//----------epizody----------------
+
+.e-content {
+    padding: $padding--content;
+}
+
+.image__logo--e {
+    margin: 40px 0 20px 0;
+}
+
+
 //----------jak_soutezit-----------
 
 .js-content {
@@ -294,3 +306,20 @@ footer {
     margin-top: 20px;
 }
 
+//----------kontakt-------
+
+.k-content {
+    padding: $padding--content;
+}
+
+.links__item--email, .links__item--phone {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 0px solid rgba(255, 255, 255, 0.3);
+}
+
+.links__text--small {
+    font-size: 20px;
+    color: #ffffff;
+}
